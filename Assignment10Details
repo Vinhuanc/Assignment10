@@ -1,0 +1,35 @@
+Computer Science 1081 – Assignment #10
+Program #1
+Rewrite the following function to use pointers instead of reference variables. Write a main function that asks the user for 2 integer values, and then prints the result of the function call, as well as the ending values for the user’s inputs.
+int doSomething(int &x, int &y) { int temp = x;
+x = y * 10;
+y = temp * 10; return x + y;
+}
+Sample Outputs:
+Please enter a value for x: 7 Please enter a value for y: 8
+The result of the function was: 150 x's current value is 80
+y's current value is 70
+Press any key to continue . ..
+Program #2
+Write a function that accepts an integer array and size as arguments. The function should create a copy of the array, except that the elements should be reversed in the copy. The function should return a pointer to the new array (i.e. return the array itself).
+In the main function, you should ask the user how big the array will be, create the first array, and then fill the array with values from the user
+Sample Outputs:
+Enter the size of the array: 4 Enter Value 1: 1
+Enter Value 2: 2
+Enter Value 3: 3
+Enter Value 4: 4
+The reversed array is: [4, 3, 2, 1] The original array is: [1, 2, 3, 4] Press any key to continue . ..
+
+Program #3
+Write a function that accepts an integer array and size as arguments. The function should create a new array that is twice the size of the first array. The function should copy the contents of the first array to the new array and initialize the unused elements of the second array with zeros. The function should return a pointer to the new array (i.e. the array itself)
+In the main function, you should ask the user how big the array will be, create the first array, and then fill the array with values from the user
+Sample Outputs:
+Enter the size of the array: 6
+Enter Value 1: 1
+Enter Value 2: 2
+Enter Value 3: 3
+Enter Value 4: 4
+Enter Value 5: 5
+Enter Value 6: 6
+The expanded array is: [1, 2, 3, 4, 5, 6, 0, 0, 0, 0, 0, 0] The original array is: [1, 2, 3, 4, 5, 6]
+Press any key to continue . ..
