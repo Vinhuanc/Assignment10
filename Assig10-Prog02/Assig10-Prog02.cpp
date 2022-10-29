@@ -4,126 +4,48 @@
 #include <algorithm>
 using namespace std;
 
-//int *reverse(int[], int);
-//void print(int[], int);
-//
-//int main(){
-//    int size, array[size];
-//    cout<<"Enter the size of the array : ";
-//        cin>>size;
-//        for(int i=1; i<=size; i++){
-//            cout<<"Enter Value "<<i<<" : ";
-//            cin>>array[i];
-//        }
-//cout<<"The original array is : ";
-//print(array,size);
-//int *reversedArray=reverse(array, size);
-//cout<<"The reverse array is : ";
-//print(reversedArray, size);
-//
-//}
-//
-//int *reverse(int a[],int size){
-//int i,j;
-//if(size<=0)
-//return NULL;
-//int *copy = new int[size];
-//for(i=1;i<=size;i++)
-//copy[i]=a[size-i-1];
-//return copy;
-//}
-//
-//void print(int a[],int size)
-//{int i;
-//for(i=1;i<=size;i++)
-//cout<<a[i] << " ";
-//cout << endl;
-//}
+int *reverseArray(int array[], int size){
+    int *temp = new int[size];
+    for(int i=0; i<size; i++){
+    temp[i] = array[size-1-i];
+}
+    return temp;
 
-
-
-//void reverse(int arr[], int n) {
-//    reverse(arr, arr + n);
-//    cout<<"The inverse array is: [";
-//    for(int i=1; i<=n; i++){
-//        cout<<arr[i]<<",";
-//    }
-//    cout<<"]"<<endl;
-//
-//
-//}
-//void reverseArrayInPlace(int * array,int length){
-//    int i,temp[length];
-//    for(  i=0;i<length;i++){
-//        temp[i]=array[length-i-1];
-//    }
-//    for(  i=0;i<length;i++){
-//        array[i]=temp[i];
-//    }
-//}
-//    int *copyPtr =copy;
-//    for(int i=1; i<=size; i++){
-//        reverse_iterator<array[i]>;
-//    }
-   
-
-//    int temp;
-//        for(int i = 0; i<size/2; i++){
-//            temp = array[i];
-//            array[i] = array[size-i-1];
-//            array[size-i-1] = temp;
-//        }
-//        for(int i = 1; i <= size; i++){
-//            cout << array[i] << " ";
-//        }
-//    for(int i=1; i<=size; i++){
-//        reverse[i] = max
-//    }
-    
-//    int start =0;
-//    int end = size -1;
-//    while (start < end)
-//        {
-//            int temp = array[start];
-//            array[start] = array[end];
-//            array[end] = temp;
-//            start++;
-//            end--;
-//        }
-    
-   // int *reverseArray =
-  //original array, correct
-//    for(int i=1; i<=size; i++){
-//        cout<<"The contents of the array is: "<<copy[i];
-//    }
+}
 
 
 int main(){
     int size;
-    int array[size];
-    int *ptr = nullptr;
-    ptr=array;
+    int *ptr;
     cout<<"Enter the size of the array: ";
     cin>>size;
-    for(int i=1; i<=size; i++){
-        cout<<"Enter Value "<< i<<" :";
+    int *array = new int[size];
+
+    for(int i=0; i<size; i++){
+        cout<<"Enter Value "<< i+1<<" :";
         cin>>array[i];
     }
-    cout<<"The original array is: [";
-    for(int i=1; i<=size; i++){
-        cout <<array[i]<<",";
-        
+    
+    ptr = reverseArray(array, size);
+    cout<<"The reversed array is: [";
+    for(int i = 0; i < size; i++){
+        cout << ptr [i] << ", ";
     }
-    cout<<"]"<<endl;
-//    reverseArrayInPlace(array, size);
-//    for(int i=0;i<5;i++){
-//        printf("%d ",array[i]);
-//    }
-  //  int reversedArray=reverse(array, size);
-  //  copyArray(array, size);
-//    reverse(array, size);
-    // cout<< reverse(array, size);
-    
-    
-    
+cout<<"]"<<endl;
+cout<<"The original array is: [";
+for(int i=0; i<size; i++){
+cout <<array[i]<<",";
 }
+
+cout<<"]"<<endl;
+
+}
+//Program #2
+//Write a function that accepts an integer array and size as arguments. The function should create a copy of the array, except that the elements should be reversed in the copy. The function should return a pointer to the new array (i.e. return the array itself).
+//In the main function, you should ask the user how big the array will be, create the first array, and then fill the array with values from the user
+//Sample Outputs:
+//Enter the size of the array: 4 Enter Value 1: 1
+//Enter Value 2: 2
+//Enter Value 3: 3
+//Enter Value 4: 4
+//The reversed array is: [4, 3, 2, 1] The original array is: [1, 2, 3, 4] Press any key to continue . ..
