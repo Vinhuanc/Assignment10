@@ -3,6 +3,9 @@
 
 using namespace std;
 int x, y,a ;
+int *input1 = nullptr;
+int *input2 = nullptr;
+
 void getValues(){
     
     cout<<"Please enter a value for x: ";
