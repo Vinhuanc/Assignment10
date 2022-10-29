@@ -10,7 +10,6 @@
 		3699C14E290CA681004ED974 /* Assig10-Prog01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3699C14D290CA681004ED974 /* Assig10-Prog01.cpp */; };
 		3699C15B290CA9A8004ED974 /* Assig10-Prog02.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3699C15A290CA9A8004ED974 /* Assig10-Prog02.cpp */; };
 		3699C166290CCEAB004ED974 /* Assig10-Prog03.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3699C165290CCEAB004ED974 /* Assig10-Prog03.cpp */; };
-		3699C171290DE2DA004ED974 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3699C170290DE2DA004ED974 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,7 +59,6 @@
 		3699C163290CCEAB004ED974 /* Assig10-Prog03 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Assig10-Prog03"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3699C165290CCEAB004ED974 /* Assig10-Prog03.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Assig10-Prog03.cpp"; sourceTree = "<group>"; };
 		3699C16E290DE2DA004ED974 /* delete */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = delete; sourceTree = BUILT_PRODUCTS_DIR; };
-		3699C170290DE2DA004ED974 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +99,6 @@
 				3699C14C290CA681004ED974 /* Assignment10 */,
 				3699C159290CA9A8004ED974 /* Assig10-Prog02 */,
 				3699C164290CCEAB004ED974 /* Assig10-Prog03 */,
-				3699C16F290DE2DA004ED974 /* delete */,
 				3699C14B290CA681004ED974 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -139,14 +136,6 @@
 				3699C165290CCEAB004ED974 /* Assig10-Prog03.cpp */,
 			);
 			path = "Assig10-Prog03";
-			sourceTree = "<group>";
-		};
-		3699C16F290DE2DA004ED974 /* delete */ = {
-			isa = PBXGroup;
-			children = (
-				3699C170290DE2DA004ED974 /* main.cpp */,
-			);
-			path = delete;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,7 +282,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3699C171290DE2DA004ED974 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
