@@ -27,3 +27,16 @@ int main(){
     getValues();
     doSomething(&x, &y);
 }
+
+//Computer Science 1081 – Assignment #10
+//Program #1
+//Rewrite the following function to use pointers instead of reference variables. Write a main function that asks the user for 2 integer values, and then prints the result of the function call, as well as the ending values for the user’s inputs.
+//int doSomething(int &x, int &y) { int temp = x;
+//x = y * 10;
+//y = temp * 10; return x + y;
+//}
+//Sample Outputs:
+//Please enter a value for x: 7 Please enter a value for y: 8
+//The result of the function was: 150 x's current value is 80
+//y's current value is 70
+//Press any key to continue . ..
